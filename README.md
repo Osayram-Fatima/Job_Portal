@@ -2,7 +2,7 @@
 Job Portal System built with React.js featuring secure authentication, job posting, candidate applications, profile management, and role-based dashboards for Admins, Employers, and Job Seekers.
 
 Full Demo Video is available check the link below:
-
+https://www.linkedin.com/posts/osayram-fatima-146713354_reactjs-fullstackdevelopment-webdevelopment-ugcPost-7460382865382359042-6pEQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhh-gYBYCsc-0x9-T-evStRc_axBvBCR94
 
 # Job Portal System
 
