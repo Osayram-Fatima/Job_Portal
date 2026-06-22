@@ -1,0 +1,174 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* ===== LEFT FORM (Editor) ===== */
+.cv-form {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.cv-form h2 {
+  color: #2563eb;
+  margin-bottom: 25px;
+  font-size: 24px;
+  border-bottom: 2px solid #eff6ff;
+  padding-bottom: 10px;
+}
+
+.cv-form h4 {
+  margin: 20px 0 10px;
+  color: #374151;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cv-form input, .cv-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  transition: all 0.3s;
+}
+
+.cv-form input:focus, .cv-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  background: #fff;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.skill-chips label {
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.skill-chips input { width: auto; margin-bottom: 0; margin-right: 5px; }
+
+.cv-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.cv-form button:hover { background: #1d4ed8; transform: translateY(-1px); }
+
+/* ===== RIGHT PREVIEW (The Resume) ===== */
+.cv-preview-container {
+  flex: 1.2;
+}
+
+.cv-preview {
+  background: white;
+  padding: 50px;
+  min-height: 297mm; /* A4 Ratio */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.preview-header {
+  text-align: center;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.preview-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #111827;
+  text-transform: uppercase;
+}
+
+.preview-header p {
+  color: #2563eb;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 13px;
+  color: #6b7280;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  color: #2563eb;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 5px;
+  margin: 25px 0 15px;
+  text-transform: uppercase;
+}
+
+.preview-item { margin-bottom: 15px; }
+.preview-item h5 { margin: 0; font-size: 16px; color: #1f2937; }
+.preview-item span { color: #6b7280; font-size: 14px; }
+.preview-item p { margin: 5px 0; font-size: 14px; color: #4b5563; }
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}

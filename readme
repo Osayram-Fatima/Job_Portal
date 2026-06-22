@@ -1,0 +1,21 @@
+###BACKEND SETUP
+first install express and node js
+
+cd backend
+npm init -y (create package.json)
+npm install express mysql2 cors
+then run node index.js
+
+in this way database would get connected
+
+###FRONTEND SETUP
+cd frontend
+npm install axios
+
+###Animation for job card
+we install
+npm install framer-motion
+import { motion } from 'framer-motion';
+
+for CV  cteation i use
+npm install html2canvas jspdf
